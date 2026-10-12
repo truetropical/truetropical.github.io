@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mike Stay — License</title>
-    <link rel="stylesheet" href="../styles.css?v=3">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -36,7 +36,7 @@
                 Unless otherwise stated this licence applies to all the software shared on this site.</p>
             </div>
 
-            <p>Copyright &copy; 2026 <a href="../index.html">Mike Stay</a></p>
+            <p>Copyright &copy; 2026 <a href="index.html">Mike Stay</a></p>
 
             <div class="privacy-section">
                 <h2 class="section-label">Grant of Rights</h2>
@@ -70,8 +70,8 @@
 
     <footer>
         <p>&copy; 2026 Mike Stay &nbsp;&middot;&nbsp;
-           <a href="../index.html">Home</a> &nbsp;&middot;&nbsp;
-           <a href="../privacy.html">Privacy Policy</a> &nbsp;&middot;&nbsp;
+           <a href="index.html">Home</a> &nbsp;&middot;&nbsp;
+           <a href="privacy.html">Privacy Policy</a> &nbsp;&middot;&nbsp;
            <a href="mailto:sendtowizzard@gmail.com">Contact</a>
         </p>
     </footer>
@@ -79,8 +79,7 @@
 </div>
 
 <script>
-var cacheBuster = '?v=' + new Date().getTime();
-fetch('menu.html' + cacheBuster)
+fetch('menu.html')
     .then(r => r.ok ? r.text() : Promise.reject('HTTP ' + r.status))
     .then(html => {
         var doc = new DOMParser().parseFromString(html, 'text/html');

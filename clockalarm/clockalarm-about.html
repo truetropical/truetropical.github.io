@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ClockAlarm — About</title>
-    <link rel="stylesheet" href="../styles.css?v=3">
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
 
@@ -100,8 +100,7 @@
 </div>
 
 <script>
-var cacheBuster = '?v=' + new Date().getTime();
-fetch('../menu.html' + cacheBuster)
+fetch('../menu.html')
     .then(r => r.ok ? r.text() : Promise.reject('HTTP ' + r.status))
     .then(html => {
         var doc = new DOMParser().parseFromString(html, 'text/html');

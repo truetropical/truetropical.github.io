@@ -1,0 +1,12 @@
+{
+  "name": "github-website",
+  "version": "1.0.0",
+  "description": "Mike Stay's personal software website",
+  "scripts": {
+    "dev": "http-server . -p 4321 -o -c-1",
+    "start": "http-server . -p 4321 -c-1"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

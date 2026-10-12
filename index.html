@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Mike Stay — Independent software developer. Free, ad-free utilities and apps for power users.">
     <title>Mike Stay — Software</title>
-    <link rel="stylesheet" href="../styles.css?v=3">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -67,14 +67,14 @@
             <h3>Support Development</h3>
             <p>All apps are free and ad-free. If my work saves you time or you just want to say thanks,<br>
                buying me a coffee helps keep the lights on and updates coming.</p>
-            <a class="donate-btn" href="../donate.html">&#9749; Support development — buy me a coffee</a>
+            <a class="donate-btn" href="donate.html">&#9749; Support development — buy me a coffee</a>
         </div>
     </main>
 
     <footer>
         <p>&copy; 2026 Mike Stay &nbsp;&middot;&nbsp;
-           <a href="../index.html">Home</a> &nbsp;&middot;&nbsp;
-           <a href="../privacy.html">Privacy Policy</a> &nbsp;&middot;&nbsp;
+           <a href="index.html">Home</a> &nbsp;&middot;&nbsp;
+           <a href="privacy.html">Privacy Policy</a> &nbsp;&middot;&nbsp;
            <a href="mailto:sendtowizzard@gmail.com">Contact</a>
         </p>
     </footer>
@@ -82,8 +82,7 @@
 </div>
 
 <script>
-var cacheBuster = '?v=' + new Date().getTime();
-fetch('menu.html' + cacheBuster)
+fetch('menu.html')
     .then(r => r.ok ? r.text() : Promise.reject('HTTP ' + r.status))
     .then(html => {
         var doc = new DOMParser().parseFromString(html, 'text/html');

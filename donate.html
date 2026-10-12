@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Support Mike Stay — buy me a coffee or donate crypto to help fund free software development.">
     <title>Mike Stay — Donate</title>
-    <link rel="stylesheet" href="../styles.css?v=3">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -179,8 +179,8 @@
 
     <footer>
         <p>&copy; 2026 Mike Stay &nbsp;&middot;&nbsp;
-           <a href="../index.html">Home</a> &nbsp;&middot;&nbsp;
-           <a href="../privacy.html">Privacy Policy</a> &nbsp;&middot;&nbsp;
+           <a href="index.html">Home</a> &nbsp;&middot;&nbsp;
+           <a href="privacy.html">Privacy Policy</a> &nbsp;&middot;&nbsp;
            <a href="mailto:sendtowizzard@gmail.com">Contact</a>
         </p>
     </footer>
@@ -188,8 +188,7 @@
 </div>
 
 <script>
-var cacheBuster = '?v=' + new Date().getTime();
-fetch('menu.html' + cacheBuster)
+fetch('menu.html')
     .then(r => r.ok ? r.text() : Promise.reject('HTTP ' + r.status))
     .then(html => {
         var doc = new DOMParser().parseFromString(html, 'text/html');

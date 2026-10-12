@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Mike Stay — Request support for Windows software. Send a support request directly by email.">
     <title>Mike Stay — Support</title>
-    <link rel="stylesheet" href="../styles.css?v=3">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -95,23 +95,25 @@
             <h3>Support Development</h3>
             <p>All apps are free and ad-free. If this software saves you time or you just want to say thanks,<br>
                buying me a coffee helps keep the lights on.</p>
-            <a class="donate-btn" href="../donate.html">&#9749; Support development — buy me a coffee</a>
+            <a class="donate-btn" href="donate.html">&#9749; Support development — buy me a coffee</a>
         </div>
     </main>
 
     <footer>
         <p>&copy; 2026 Mike Stay &nbsp;&middot;&nbsp;
-           <a href="../index.html">Home</a> &nbsp;&middot;&nbsp;
-           <a href="../privacy.html">Privacy Policy</a> &nbsp;&middot;&nbsp;
+           <a href="index.html">Home</a> &nbsp;&middot;&nbsp;
+           <a href="privacy.html">Privacy Policy</a> &nbsp;&middot;&nbsp;
            <a href="mailto:sendtowizzard@gmail.com">Contact</a>
         </p>
     </footer>
 
 </div>
 
+<!-- Load environment variables for local development -->
+<script src="env-config.js" onerror="window.WEB3FORMS_ACCESS_KEY = 'YOUR_WEB3FORMS_ACCESS_KEY'"></script>
+
 <script>
-var cacheBuster = '?v=' + new Date().getTime();
-fetch('menu.html' + cacheBuster)
+fetch('menu.html')
     .then(r => r.ok ? r.text() : Promise.reject('HTTP ' + r.status))
     .then(html => {
         var doc = new DOMParser().parseFromString(html, 'text/html');
@@ -128,7 +130,7 @@ fetch('menu.html' + cacheBuster)
         }
     });
 
-const WEB3FORMS_ACCESS_KEY = '2400b84d-dce2-4319-8495-fadf497f99e4';
+const WEB3FORMS_ACCESS_KEY = window.WEB3FORMS_ACCESS_KEY || 'YOUR_WEB3FORMS_ACCESS_KEY';
 const form      = document.getElementById('support-form');
 const submitBtn = document.getElementById('submit-btn');
 const statusBox = document.getElementById('form-status');
