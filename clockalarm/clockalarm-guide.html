@@ -54,8 +54,8 @@
                     <li><strong>Drag the bottom-right corner handle (◢)</strong> to resize. The layout scales automatically.</li>
                     <li><strong>Double-click</strong> the widget to cycle through display modes: Clock → Weather → World Clock → Countdown.</li>
                     <li><strong>Right-click</strong> the widget to open the main settings menu.</li>
-                    <li>To set your first alarm: right-click → <strong>Alarms</strong> → <strong>Add Alarm</strong>.</li>
-                    <li>To enable Weather: right-click → <strong>Weather Forecast</strong> and enter your WeatherAPI key and city.</li>
+                    <li>To set your first alarm: right-click → <strong>Alarm Builder</strong>.</li>
+                    <li>To enable Weather: right-click → <strong>Settings > Weather Forecast</strong> and enter your WeatherAPI key and city.</li>
                 </ol>
             </div>
 
@@ -80,48 +80,38 @@
             <h2 class="section-label">Display Modes</h2>
             <div class="card">
                 <ul>
-                    <li><strong>Clock</strong> — Current time and date. The next upcoming alarm counts down prominently below the time.</li>
-                    <li><strong>Weather</strong> — Current conditions and forecast. Requires a WeatherAPI key configured in settings.</li>
-                    <li><strong>World Clock</strong> — Your home city alongside one alternative city (free), or an unlimited list of cities with a Timezone Conversion Calculator (Pro).</li>
-                    <li><strong>Countdown</strong> — Tracks days remaining to future events such as holidays or birthdays. Free tier supports 1 active event; Pro unlocks unlimited events.</li>
+                    <li><strong>Clock</strong> — Current time, date and next alarm.</li>
+                    <li><strong>Weather</strong> — Current conditions and forecast; configure a WeatherAPI key in settings.</li>
+                    <li><strong>World Clock</strong> — Shows home and alternative cities; the floating World Clock supports unlimited favourite cities and timezone conversion.</li>
+                    <li><strong>Countdown</strong> — Tracks unlimited future events.</li>
                 </ul>
             </div>
 
             <h2 class="section-label">Auto-Cycle</h2>
             <div class="card">
                 <ul>
-                    <li>Enable Auto-Cycle in Settings to have the widget rotate through modes automatically.</li>
-                    <li><strong>Free:</strong> Rotates at fixed 5-minute intervals.</li>
-                    <li><strong>Pro:</strong> Set a precise custom interval of your choosing.</li>
+                    <li>Use <strong>Settings > Widget Cycle Interval</strong> to select Off, 5 Minutes, or Custom Interval...</li>
                 </ul>
             </div>
 
-            <h2 class="section-label">Alarms</h2>
+            <h2 class="section-label">Managing Alarms</h2>
             <div class="card">
                 <ul>
-                    <li>Right-click the widget → <strong>Alarms</strong> to manage your alarm list.</li>
-                    <li>The next upcoming alarm is displayed as a countdown on the main Clock screen.</li>
-                    <li>Click <strong>All Alarms Holiday Off</strong> to silence all alarms temporarily without deleting them.</li>
+                    <li>Use <strong>Alarm Builder</strong> to manage unlimited alarms.</li>
+                    <li>Repeat by days of the week, date of month, every X days, or Nth weekday.</li>
+                    <li>Choose standard Windows sounds or custom .wav files.</li>
+                    <li>Use <strong>Settings > All Alarms Holiday Off</strong> to silence alarms temporarily.</li>
+                    <li>The next alarm appears on the Clock display.</li>
                 </ul>
-                <table class="param-table" style="margin-top:12px;">
-                    <thead>
-                        <tr><th>Feature</th><th>Free</th><th>Pro</th></tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>Number of alarms</td><td>Up to 10</td><td>Unlimited</td></tr>
-                        <tr><td>Repeating schedules</td><td>Days of the week</td><td>Date of month, every X days, Nth weekday</td></tr>
-                        <tr><td>Alarm sounds</td><td>Standard Windows notification sounds</td><td>Load your own .wav files</td></tr>
-                    </tbody>
-                </table>
             </div>
 
             <h2 class="section-label">Appearance &amp; Themes</h2>
             <div class="card">
                 <ul>
-                    <li><strong>Theme mode:</strong> Choose System (follows Windows), Dark, or Light.</li>
-                    <li><strong>Transparency:</strong> Adjust the widget background opacity via the transparency slider in Settings.</li>
-                    <li><strong>Clock format:</strong> Toggle 12/24-hour and choose from preset date formats.</li>
-                    <li><strong>Pro:</strong> Write your own custom date format strings (e.g. <code>yyyy-MM-dd</code>) and inject exact HEX colour values for full personalisation.</li>
+                    <li>Use <strong>Settings > Display Format</strong> to select System, Dark, Light or Custom.</li>
+                    <li>Adjust Background Opacity and Text Opacity in Settings > Display Format.</li>
+                    <li>Use Settings > Clock Format for 12/24-hour time and preset dates; use Settings > Clock Format > Custom Date Format… for custom date strings.</li>
+                    <li>Use Settings > Display Format > Custom for custom HEX colours.</li>
                 </ul>
             </div>
 
@@ -129,7 +119,7 @@
             <div class="card">
                 <ol>
                     <li>Register for a free API key at <a href="https://www.weatherapi.com" target="_blank" rel="noopener">weatherapi.com</a> — no credit card required.</li>
-                    <li>Right-click the widget → <strong>Weather Forecast</strong>.</li>
+                    <li>Right-click the widget → <strong>Settings > Weather Forecast</strong>.</li>
                     <li>Enter your API key and your city name, then click Save.</li>
                     <li>Weather will update silently in the background every 30 minutes.</li>
                 </ol>
@@ -139,29 +129,24 @@
             <h2 class="section-label">World Clock</h2>
             <div class="card">
                 <ul>
-                    <li><strong>Free:</strong> Displays your home city and one alternative city side-by-side. Daylight Saving Time is handled automatically.</li>
-                    <li><strong>Pro:</strong> Opens a dedicated floating World Clock window with an unlimited list of favourite cities and an interactive Timezone Conversion Calculator.</li>
-                    <li>Configure your home city and additional cities via right-click → <strong>World Clock Settings</strong>.</li>
+                    <li>The widget displays home and alternative cities.</li>
+                    <li>Open <strong>World Clock</strong> for a floating window with unlimited favourite cities and timezone conversion.</li>
+                    <li>Configure the home city and additional cities via <strong>Settings > World Clock</strong>.</li>
                 </ul>
             </div>
 
-            <h2 class="section-label">Countdown Events</h2>
+            <h2 class="section-label">Countdown Event Tracking</h2>
             <div class="card">
                 <ul>
-                    <li>Track specific future dates — holidays, birthdays, deadlines — displayed on the Countdown widget mode.</li>
-                    <li>Right-click → <strong>Countdown Events</strong> to add or manage events.</li>
-                    <li><strong>Free:</strong> 1 active event at a time.</li>
-                    <li><strong>Pro:</strong> Unlimited events and custom sounds per event.</li>
+                    <li>Use <strong>Countdown Event Builder</strong> to manage unlimited tracked events and custom sounds.</li>
                 </ul>
             </div>
 
-            <h2 class="section-label">Stopwatch &amp; Timer <span style="font-size:0.8em; font-weight:400;">(Pro only)</span></h2>
+            <h2 class="section-label">Stopwatch &amp; Countdown Timer</h2>
             <div class="card">
                 <ul>
-                    <li>Dedicated resizable floating windows that operate entirely independently of the main widget.</li>
-                    <li><strong>Stopwatch:</strong> Includes lap time recording.</li>
-                    <li><strong>Timer:</strong> Custom durations, presets, background execution, and custom sounds.</li>
-                    <li>Access via right-click → <strong>Stopwatch</strong> or <strong>Timer</strong>.</li>
+                    <li>Open <strong>Stopwatch</strong> or <strong>Countdown Timer</strong> for separate resizable windows.</li>
+                    <li>Stopwatch records laps; Countdown Timer supports custom durations, presets, sounds and background execution.</li>
                 </ul>
             </div>
 
@@ -171,9 +156,9 @@
                     <li><strong>Weather shows an error:</strong> Check your API key is entered correctly and your city name is valid. Try the city name as it appears on weatherapi.com.</li>
                     <li><strong>Weather stopped updating:</strong> Your free WeatherAPI key may have expired or been invalidated. Generate a new key at weatherapi.com.</li>
                     <li><strong>Alarm didn't fire:</strong> Ensure the alarm is enabled (not in Holiday Mode) and the correct AM/PM is set for 12-hour format.</li>
-                    <li><strong>Widget appears behind other windows:</strong> Right-click → <strong>Always on Top</strong> to pin it above all other windows.</li>
-                    <li><strong>World Clock shows wrong time:</strong> Confirm your home city timezone is set correctly in World Clock Settings.</li>
-                    <li><strong>Widget lost its position after restart:</strong> Position is saved automatically on close. If it resets, check that ClockAlarm has write access to <code>%LOCALAPPDATA%\ClockAlarm</code>.</li>
+                    <li><strong>Widget appears behind other windows:</strong> Right-click → <strong>Settings > Always on Top</strong> to pin it above all other windows.</li>
+                    <li><strong>World Clock shows wrong time:</strong> Confirm your home city timezone is set correctly via Settings > World Clock.</li>
+                    <li><strong>Widget lost its position after restart:</strong> Position is saved automatically on close. If it resets, check that ClockAlarm has write access to <code>%AppData%\ClockAlarmWidget</code>.</li>
                 </ul>
             </div>
         </div>
