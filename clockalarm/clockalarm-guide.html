@@ -39,8 +39,8 @@
             <div class="card">
                 <ul>
                     <li>Windows 10 (1809+) or Windows 11, 64-bit.</li>
-                    <li>.NET 8 Desktop Runtime — bundled in the MSIX installer, no separate download needed.</li>
-                    <li>For Weather: a free API key from <a href="https://www.weatherapi.com" target="_blank" rel="noopener">weatherapi.com</a> (no credit card required).</li>
+                    <li>.NET 8 Desktop Runtime — install it from Microsoft if it is not already on your PC.</li>
+                    <li>Weather (full version only): a free API key from <a href="https://www.visualcrossing.com/weather-api" target="_blank" rel="noopener">visualcrossing.com</a> (no credit card required).</li>
                     <li>No other dependencies, background services, or administrator rights required.</li>
                 </ul>
             </div>
@@ -48,14 +48,14 @@
             <h2 class="section-label">Getting Started</h2>
             <div class="card">
                 <ol>
-                    <li>Install ClockAlarm from GitHub MSIX package.</li>
+                    <li>Download ClockAlarmPortable.zip or ClockAlarm.zip using the TrueTropical newsletter; ClockAlarmFree on GitHub is the limited local-only version. Extract the zip and run ClockAlarmWidget.App.exe.</li>
                     <li>Launch ClockAlarm — the widget appears on your desktop and can be placed anywhere.</li>
                     <li><strong>Drag</strong> the widget background to reposition it.</li>
                     <li><strong>Drag the bottom-right corner handle (◢)</strong> to resize. The layout scales automatically.</li>
-                    <li><strong>Double-click</strong> the widget to cycle through display modes: Clock → Weather → World Clock → Countdown.</li>
+                    <li><strong>Double-click</strong> the widget to cycle through display modes: Clock → Weather (full version only) → World Clock → Countdown.</li>
                     <li><strong>Right-click</strong> the widget to open the main settings menu.</li>
                     <li>To set your first alarm: right-click → <strong>Alarm Builder</strong>.</li>
-                    <li>To enable Weather: right-click → <strong>Settings > Weather Forecast</strong> and enter your WeatherAPI key and city.</li>
+                    <li>To enable Weather: right-click → <strong>Settings > Weather Forecast</strong> and enter your Visual Crossing API key and city.</li>
                 </ol>
             </div>
 
@@ -81,25 +81,25 @@
             <div class="card">
                 <ul>
                     <li><strong>Clock</strong> — Current time, date and next alarm.</li>
-                    <li><strong>Weather</strong> — Current conditions and forecast; configure a WeatherAPI key in settings.</li>
-                    <li><strong>World Clock</strong> — Shows home and alternative cities; the floating World Clock supports unlimited favourite cities and timezone conversion.</li>
-                    <li><strong>Countdown</strong> — Tracks unlimited future events.</li>
+                    <li><strong>Weather (full version only)</strong> — Current conditions and forecast; configure a Visual Crossing API key in settings.</li>
+                    <li><strong>World Clock</strong> — Shows home and alternative cities; the floating World Clock, with unlimited favourites and timezone conversion, is full version only.</li>
+                    <li><strong>Countdown</strong> — Tracks events; unlimited events and custom sounds are full version only.</li>
                 </ul>
             </div>
 
             <h2 class="section-label">Auto-Cycle</h2>
             <div class="card">
                 <ul>
-                    <li>Use <strong>Settings > Widget Cycle Interval</strong> to select Off, 5 Minutes, or Custom Interval...</li>
+                    <li>Use <strong>Settings > Widget Cycle Interval</strong> to select Off, 5 Minutes, or Custom Interval (full version only).</li>
                 </ul>
             </div>
 
             <h2 class="section-label">Managing Alarms</h2>
             <div class="card">
                 <ul>
-                    <li>Use <strong>Alarm Builder</strong> to manage unlimited alarms.</li>
-                    <li>Repeat by days of the week, date of month, every X days, or Nth weekday.</li>
-                    <li>Choose standard Windows sounds or custom .wav files.</li>
+                    <li>Use <strong>Alarm Builder</strong> to manage unlimited alarms (full version only).</li>
+                    <li>Repeat by days of the week, date of month, every X days, or Nth weekday (full version only).</li>
+                    <li>Choose standard Windows sounds or custom .wav files (full version only).</li>
                     <li>Use <strong>Settings > All Alarms Holiday Off</strong> to silence alarms temporarily.</li>
                     <li>The next alarm appears on the Clock display.</li>
                 </ul>
@@ -110,27 +110,27 @@
                 <ul>
                     <li>Use <strong>Settings > Display Format</strong> to select System, Dark, Light or Custom.</li>
                     <li>Adjust Background Opacity and Text Opacity in Settings > Display Format.</li>
-                    <li>Use Settings > Clock Format for 12/24-hour time and preset dates; use Settings > Clock Format > Custom Date Format… for custom date strings.</li>
-                    <li>Use Settings > Display Format > Custom for custom HEX colours.</li>
+                    <li>Use Settings > Clock Format for 12/24-hour time and preset dates; use Settings > Clock Format > Custom Date Format… for custom date strings (full version only).</li>
+                    <li>Use Settings > Display Format > Custom for custom HEX colours (full version only).</li>
                 </ul>
             </div>
 
-            <h2 class="section-label">Weather Setup</h2>
+            <h2 class="section-label">Weather Setup (full version only)</h2>
             <div class="card">
                 <ol>
-                    <li>Register for a free API key at <a href="https://www.weatherapi.com" target="_blank" rel="noopener">weatherapi.com</a> — no credit card required.</li>
+                    <li>Register for a free API key at <a href="https://www.visualcrossing.com/weather-api" target="_blank" rel="noopener">visualcrossing.com</a> — no credit card required.</li>
                     <li>Right-click the widget → <strong>Settings > Weather Forecast</strong>.</li>
                     <li>Enter your API key and your city name, then click Save.</li>
                     <li>Weather will update silently in the background every 30 minutes.</li>
                 </ol>
-                <p style="margin-top:12px; font-size:0.9em; color:#666;"><em>Note: The free WeatherAPI tier supports up to 1 million calls per month — well above ClockAlarm's usage at 48 calls per day.</em></p>
+                <p style="margin-top:12px; font-size:0.9em; color:#666;"><em>Note: A free Visual Crossing account is sufficient for typical personal use; see visualcrossing.com for current limits.</em></p>
             </div>
 
             <h2 class="section-label">World Clock</h2>
             <div class="card">
                 <ul>
                     <li>The widget displays home and alternative cities.</li>
-                    <li>Open <strong>World Clock</strong> for a floating window with unlimited favourite cities and timezone conversion.</li>
+                    <li>Open <strong>World Clock</strong> for a floating window; unlimited favourites and timezone conversion are full version only.</li>
                     <li>Configure the home city and additional cities via <strong>Settings > World Clock</strong>.</li>
                 </ul>
             </div>
@@ -138,14 +138,14 @@
             <h2 class="section-label">Countdown Event Tracking</h2>
             <div class="card">
                 <ul>
-                    <li>Use <strong>Countdown Event Builder</strong> to manage unlimited tracked events and custom sounds.</li>
+                    <li>Use <strong>Countdown Event Builder</strong> to manage unlimited tracked events and custom sounds (full version only).</li>
                 </ul>
             </div>
 
             <h2 class="section-label">Stopwatch &amp; Countdown Timer</h2>
             <div class="card">
                 <ul>
-                    <li>Open <strong>Stopwatch</strong> or <strong>Countdown Timer</strong> for separate resizable windows.</li>
+                    <li>Open <strong>Stopwatch</strong> (full version only) or <strong>Countdown Timer</strong> (full version only) for separate resizable windows.</li>
                     <li>Stopwatch records laps; Countdown Timer supports custom durations, presets, sounds and background execution.</li>
                 </ul>
             </div>
@@ -153,8 +153,8 @@
             <h2 class="section-label">Troubleshooting</h2>
             <div class="card">
                 <ul>
-                    <li><strong>Weather shows an error:</strong> Check your API key is entered correctly and your city name is valid. Try the city name as it appears on weatherapi.com.</li>
-                    <li><strong>Weather stopped updating:</strong> Your free WeatherAPI key may have expired or been invalidated. Generate a new key at weatherapi.com.</li>
+                    <li><strong>Weather (full version only) shows an error:</strong> Check your API key is entered correctly and your city name is valid. Try the city name as it appears on visualcrossing.com.</li>
+                    <li><strong>Weather (full version only) stopped updating:</strong> Your Visual Crossing API key may have expired or been invalidated. Generate a new key at visualcrossing.com.</li>
                     <li><strong>Alarm didn't fire:</strong> Ensure the alarm is enabled (not in Holiday Mode) and the correct AM/PM is set for 12-hour format.</li>
                     <li><strong>Widget appears behind other windows:</strong> Right-click → <strong>Settings > Always on Top</strong> to pin it above all other windows.</li>
                     <li><strong>World Clock shows wrong time:</strong> Confirm your home city timezone is set correctly via Settings > World Clock.</li>
